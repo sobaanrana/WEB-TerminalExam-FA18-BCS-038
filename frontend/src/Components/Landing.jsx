@@ -13,7 +13,6 @@ const Landing = () => {
     const submitHandler = (e) => {
         e.preventDefault();
       
-        //dispatch(register(name,email,password));
     }
 
     return ( 

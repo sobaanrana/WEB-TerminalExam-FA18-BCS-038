@@ -13,7 +13,7 @@ export const matchReducer = (state = { match:[] }, action) => {
         case MATCH_SUCCESS:
             return {
                 loading: false, 
-                match: action.payload.match
+                match: action.payload
 
             }
             

@@ -13,7 +13,7 @@ export const setMatch = (city, date, teamA, teamB) => async (dispatch) => {
 
         dispatch({
             type: MATCH_SUCCESS,
-            payload: data
+            payload: data.match
         })
     } catch (error) {
         dispatch({

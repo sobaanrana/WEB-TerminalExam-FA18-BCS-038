@@ -1,0 +1,5 @@
+{
+    "db": "mongodb://localhost/pslDB",
+    "host" : "4000",
+    "jwtPrivateKey" : "SomePrivateKey"
+}

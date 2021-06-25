@@ -1,0 +1,3 @@
+export const MATCH_REQUEST = 'MATCH_REQUEST'
+export const MATCH_SUCCESS = 'MATCH_SUCCESS'
+export const MATCH_FAIL = 'MATCH_FAIL'

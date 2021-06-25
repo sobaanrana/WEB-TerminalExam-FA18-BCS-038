@@ -7,10 +7,7 @@ import Landing from './Components/Landing';
 
 function App() {
 
-  /*
-  useEffect(() => {
-    store.dispatch(loadUser())
-  })*/
+ 
   return (
     <Router>
       <div className="App">

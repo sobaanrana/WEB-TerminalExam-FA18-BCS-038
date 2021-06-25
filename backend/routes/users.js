@@ -17,6 +17,8 @@ router.get('/', async function(req, res, next) {
     })
 });
 
+
+//For signup
 router.post('/register',validateSignup, async (req, res) => {
 
   let userPresent = await User.findOne({email: req.body.email});
@@ -35,6 +37,7 @@ router.post('/register',validateSignup, async (req, res) => {
 
 })
 
+//For Login
 router.post('/login', validateLogin, async (req, res) => {
   let user = await User.findOne({email: req.body.email});
 

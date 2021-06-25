@@ -1,6 +1,7 @@
 import { MATCH_FAIL, MATCH_REQUEST, MATCH_SUCCESS } from "../Constants/matchConstants"
+import { CLEAR_ERRORS } from "../Constants/userConstants"
 
-export const matchReducer = (state = { match:[] }, action) => {//state contains products that is empty array
+export const matchReducer = (state = { match:[] }, action) => {
     switch(action.type) {
 
         case MATCH_REQUEST:

@@ -12,12 +12,12 @@ export const setMatch = (city, date, teamA, teamB) => async (dispatch) => {
         
 
         dispatch({
-            type: ALL_PRODUCTS_SUCCESS,
+            type: MATCH_SUCCESS,
             payload: data
         })
     } catch (error) {
         dispatch({
-            type: ALL_PRODUCTS_FAIL, //IN case of error this is dispatched
+            type: MATCH_FAIL, //IN case of error this is dispatched
             payload: error.response.data.message
         })
     }

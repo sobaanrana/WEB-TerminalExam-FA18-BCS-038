@@ -1,16 +1,15 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk'; //middleware allows you to write action creators that return a function instead of an action.
+import thunk from 'redux-thunk'; 
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { userReducer } from './Reducers/userReducers';
+import { matchReducer } from './Reducers/matchReducers';
 
 const reducer = combineReducers({
-    //we have reducers for every resource like product, users reducer. So we will add all the reducers in this combined rducer function
-    //products: productsReducer,
-    //productDetails: productDetailsReducer,
     loggedInUser : userReducer,
+    match : matchReducer
 })
 
-let initialState = {} //contains all the data we want to put in the state just before loading the applicaiton
+let initialState = {} 
 
 //Now create store
 const middleware = [thunk];

@@ -22,9 +22,9 @@ const userSchema = mongoose.Schema({
 
 })
 
-userSchema.methods.generateHashedPassword =async  function() { //we can write custom methods on each user record
-    let salt = await bcrypt.genSalt(10) //it create dummy string which starting point for randomzation using which we encrypt our password
-    this.password = await bcrypt.hash(this.password,salt); //user for login gives password and we hash it to save as in encrypted from
+userSchema.methods.generateHashedPassword =async  function() { 
+    let salt = await bcrypt.genSalt(10) 
+    this.password = await bcrypt.hash(this.password,salt); 
 }
 const User = mongoose.model('User', userSchema);
 
